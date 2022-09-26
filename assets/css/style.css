@@ -1,0 +1,70 @@
+:root {
+    --page-color: rgb(210, 210, 225);
+    --title-color: lightblue;
+    --accent-color: rgb(120, 165, 175);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--page-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../images/header.jpg");
+    background-repeat: no-repeat;
+    background-size: 200%;
+    padding: 5% 0;
+    max-height: 100px;
+}
+
+header h1 {
+    padding: 0.5%;
+    font-size: 48px;
+    background-color: var(--title-color);
+    border: solid 2px var(--accent-color);
+    border-radius: 5px;
+}
+
+nav {
+    flex: 1 0;
+    text-align: end;
+}
+
+nav a {
+    color: cyan;
+    text-decoration: none;
+    padding: 0.5%;
+    font-size: 24px;
+    border-bottom: solid 3px cyan;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    color: magenta;
+    border-color: magenta;
+}
+
+.subtitle {
+    display: block;
+    position: relative;
+    
+    background-color: var(--title-color);
+}
+
+.subtitle h2 {
+
+}
+
+@media screen and (max-width: 724px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    nav {
+        margin-top: 10px;
+    }
+}
