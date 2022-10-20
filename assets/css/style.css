@@ -101,12 +101,12 @@ main section article p {
 }
 
 /* Portfolio */
-.portfolio div {
+#portfolio div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    flex: 2 0 500px;
+    flex: 2 0 25%;
 }
 .card {
     flex: 1 0 15%;
@@ -115,12 +115,31 @@ main section article p {
 
 .featured {
     flex: 2 0 200px;
-    padding: 40%;
+    padding: 20%;
 }
 
 /* Contact Me */
 .contact ul {
     display: inline;
+}
+
+h4 {
+    font-size: large;
+    padding: 0.2em;
+    border: solid 1px black;
+    background-color: var(--dark-accent);
+    border-radius: 2px;
+    align-self: flex-end;
+}
+
+h4 a {
+    text-decoration: none;
+}
+
+#pokewire {
+    background-image: url("../images/pokewire-screenshot.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media screen and (max-width: 724px) {
