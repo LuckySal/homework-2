@@ -142,12 +142,18 @@ h4 a {
     background-size: cover;
 }
 
+#mtgpp {
+    background-image: url("../images/mtgpp-screenshot.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media screen and (max-width: 724px) {
     header {
         flex-direction: column;
         justify-content: center;
     }
-    
+
     nav {
         margin-top: 10px;
     }
